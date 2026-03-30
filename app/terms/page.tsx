@@ -1,0 +1,192 @@
+'use client'
+
+import Link from 'next/link'
+import Image from 'next/image'
+
+export default function TermsPage() {
+  return (
+    <div
+      className="min-h-screen"
+      style={{
+        backgroundColor: '#181818',
+        backgroundImage:
+          'linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px)',
+        backgroundSize: '48px 48px',
+      }}
+    >
+      {/* Header */}
+      <nav className="flex items-center justify-between px-8 h-16 border-b border-white/[0.06]">
+        <Link href="/" className="transition-opacity hover:opacity-80">
+          <Image
+            src="/grimbang_logo_dark.webp"
+            alt="Grimbang logo"
+            width={30}
+            height={30}
+            className="object-contain"
+          />
+        </Link>
+        <Link
+          href="/"
+          className="text-white/50 text-sm transition-colors hover:text-white/80"
+        >
+          Back to Home
+        </Link>
+      </nav>
+
+      {/* Content */}
+      <main className="max-w-2xl mx-auto px-6 py-16">
+        <h1 className="text-white text-3xl font-bold mb-2">Terms of Service</h1>
+        <p className="text-white/30 text-sm mb-12">Last updated: February 22, 2026</p>
+
+        <div className="space-y-10">
+          <section>
+            <h2 className="text-white/80 text-lg font-semibold mb-3">1. Acceptance of Terms</h2>
+            <div className="text-white/40 text-sm leading-relaxed space-y-3">
+              <p>
+                By accessing or using Grimbang (&quot;the Service&quot;), you agree to be bound by these Terms of Service.
+                If you do not agree to these terms, please do not use the Service.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-white/80 text-lg font-semibold mb-3">2. Description of Service</h2>
+            <div className="text-white/40 text-sm leading-relaxed space-y-3">
+              <p>
+                Grimbang is an AI-powered thumbnail generation platform designed for content creators.
+                The Service uses artificial intelligence models to generate images based on user-provided prompts and reference images.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-white/80 text-lg font-semibold mb-3">3. Account & Authentication</h2>
+            <div className="text-white/40 text-sm leading-relaxed space-y-3">
+              <p>
+                You must sign in with a valid Google account to use the Service.
+                You are responsible for maintaining the security of your account and all activities that occur under it.
+              </p>
+              <p>
+                You agree to provide accurate information and to notify us immediately of any unauthorized use of your account.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-white/80 text-lg font-semibold mb-3">4. Subscription & Credits</h2>
+            <div className="text-white/40 text-sm leading-relaxed space-y-3">
+              <p>
+                Grimbang offers free and paid subscription plans. Paid plans provide monthly credits that are used to generate thumbnails.
+              </p>
+              <ul className="list-disc pl-5 space-y-1.5">
+                <li>Each image generation consumes 1 credit.</li>
+                <li>Credits are non-transferable and non-refundable unless otherwise required by law.</li>
+                <li>Unused credits do not roll over to the next billing cycle.</li>
+                <li>Upgrading your plan grants immediate bonus credits; downgrading takes effect at the next billing cycle.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-white/80 text-lg font-semibold mb-3">5. Payment & Billing</h2>
+            <div className="text-white/40 text-sm leading-relaxed space-y-3">
+              <p>
+                Payments are processed securely through Polar. By subscribing to a paid plan, you authorize recurring charges
+                to your payment method at the beginning of each billing cycle.
+              </p>
+              <p>
+                You may cancel your subscription at any time through the Manage Subscription portal.
+                Upon cancellation, you retain access to paid features until the end of your current billing period.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-white/80 text-lg font-semibold mb-3">6. Content Ownership & License</h2>
+            <div className="text-white/40 text-sm leading-relaxed space-y-3">
+              <p>
+                You retain ownership of the prompts you submit and the images you upload as references.
+              </p>
+              <p>
+                Thumbnails generated by the Service are yours to use for personal and commercial purposes,
+                including YouTube thumbnails, social media posts, and other content creation activities.
+              </p>
+              <p>
+                You grant Grimbang a limited, non-exclusive license to process your inputs for the purpose of generating thumbnails
+                and improving the Service.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-white/80 text-lg font-semibold mb-3">7. Acceptable Use</h2>
+            <div className="text-white/40 text-sm leading-relaxed space-y-3">
+              <p>You agree not to use the Service to:</p>
+              <ul className="list-disc pl-5 space-y-1.5">
+                <li>Generate content that is illegal, harmful, threatening, abusive, or violates the rights of others</li>
+                <li>Create misleading, deceptive, or fraudulent content</li>
+                <li>Attempt to reverse-engineer, exploit, or circumvent the Service&apos;s systems or security measures</li>
+                <li>Use automated scripts or bots to access the Service without prior written consent</li>
+                <li>Resell or redistribute the Service or access to it</li>
+              </ul>
+              <p>
+                We reserve the right to suspend or terminate accounts that violate these terms.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-white/80 text-lg font-semibold mb-3">8. AI-Generated Content Disclaimer</h2>
+            <div className="text-white/40 text-sm leading-relaxed space-y-3">
+              <p>
+                Thumbnails are generated by AI models and may not always meet your expectations.
+                We do not guarantee the accuracy, quality, or suitability of generated content.
+              </p>
+              <p>
+                You are solely responsible for reviewing and approving any generated content before publishing or distributing it.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-white/80 text-lg font-semibold mb-3">9. Limitation of Liability</h2>
+            <div className="text-white/40 text-sm leading-relaxed space-y-3">
+              <p>
+                The Service is provided &quot;as is&quot; without warranties of any kind, express or implied.
+                Grimbang shall not be liable for any indirect, incidental, special, or consequential damages
+                arising from the use or inability to use the Service.
+              </p>
+              <p>
+                Our total liability for any claim related to the Service shall not exceed the amount you paid
+                in the twelve (12) months preceding the claim.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-white/80 text-lg font-semibold mb-3">10. Changes to Terms</h2>
+            <div className="text-white/40 text-sm leading-relaxed space-y-3">
+              <p>
+                We reserve the right to modify these Terms at any time. Material changes will be communicated
+                through the Service or via email. Continued use of the Service after changes constitutes acceptance
+                of the updated Terms.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-white/80 text-lg font-semibold mb-3">11. Contact</h2>
+            <div className="text-white/40 text-sm leading-relaxed">
+              <p>
+                If you have any questions about these Terms, please contact us at{' '}
+                <a href="mailto:gogrimbang@gmail.com" className="text-white/60 underline underline-offset-2 transition-colors hover:text-white/80">
+                  gogrimbang@gmail.com
+                </a>
+              </p>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  )
+}
