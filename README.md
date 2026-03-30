@@ -2,16 +2,18 @@
 
 > **"Your Sentence, Becomes Art."** — AI-powered YouTube thumbnail generator.
 
+Generate high-quality YouTube thumbnails with a single prompt, and refine them with natural language instructions.
+
 한 문장의 프롬프트로 유튜브 썸네일을 생성하고, 텍스트 지시만으로 정밀 편집까지 수행하는 SaaS 서비스입니다.
 
 ## Features
 
-- **AI 썸네일 생성** — 프롬프트 한 줄로 16:9 고품질 썸네일 생성 (2K 해상도)
-- **정밀 편집** — "배경을 더 어둡게", "텍스트 추가해줘" 같은 자연어 지시로 편집
-- **프리셋 스타일** — 10종의 CTR 최적화 프리셋 (바이럴, 시네마틱, 웹툰, VS 배틀 등)
-- **참조 이미지** — 이전 썸네일을 첨부하면 스타일을 자동 분석하여 일관성 유지
-- **한글 지원** — 한국어 프롬프트 자동 번역, 한/영 UI
-- **크레딧 시스템** — 가입 시 무료 5크레딧, 구독제 운영
+- **AI Thumbnail Generation** — Generate 16:9 thumbnails in 2K resolution from a single prompt
+- **Precision Edit** — Edit with natural language like "make the background darker" or "add text"
+- **Preset Styles** — 10 CTR-optimized presets (viral, cinematic, webtoon, VS battle, etc.)
+- **Reference Images** — Attach previous thumbnails for automatic style analysis and consistency
+- **Korean Support** — Auto-translation of Korean prompts, bilingual UI (KR/EN)
+- **Credit System** — 5 free credits on signup, subscription-based pricing
 
 ## Tech Stack
 
@@ -64,21 +66,21 @@ npm run dev
 ```
 app/
   api/
-    generate/route.ts    # 썸네일 생성 파이프라인
-    inpaint/route.ts     # 정밀 편집 파이프라인
-  dashboard/             # 메인 대시보드
-  (main)/                # 랜딩페이지
+    generate/route.ts    # Thumbnail generation pipeline
+    inpaint/route.ts     # Precision edit pipeline
+  dashboard/             # Main dashboard
+  (main)/                # Landing page
 components/
   dashboard/
-    PromptArea.tsx       # Generate/Precision 듀얼 모드 UI
-    Sidebar.tsx          # 실시간 썸네일 히스토리
-  main/                  # 랜딩페이지 컴포넌트
+    PromptArea.tsx       # Generate/Precision dual-mode UI
+    Sidebar.tsx          # Real-time thumbnail history
+  main/                  # Landing page components
 lib/
-  system-prompt.ts       # 시스템 프롬프트 (별도 설정 필요)
-  presets.ts             # 프리셋 템플릿 (별도 설정 필요)
-  gemini.ts              # Gemini 클라이언트
-  supabase/              # Supabase 클라이언트 (server/client)
-  i18n/                  # 한/영 다국어 지원
+  system-prompt.ts       # System prompt (setup required)
+  presets.ts             # Preset templates (setup required)
+  gemini.ts              # Gemini client
+  supabase/              # Supabase client (server/client)
+  i18n/                  # KR/EN localization
 ```
 
 ## License
